@@ -9,7 +9,7 @@ Connecter un point de charge et stocker les statuts de fonctionnement.
 **Mission :**
 Conçois et implémente un serveur d'ingestion de données.
 
-1. Le serveur doit exposer un point d'entrée **WebSocket** (WSS).
+1. Le serveur doit exposer un point d'entrée **WebSocket** (WS).
 2. Il doit recevoir et comprendre des requêtes **StatusNotification** du protocole **OCPP 1.6**.
 3. Le serveur doit stocker les messages reçus pour en conserver une trace et un historique.
 

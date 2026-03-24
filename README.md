@@ -1,19 +1,38 @@
-# FAROAD
-Exercice technique / fonctionnel utilisé par FAROAD pour ses recrutements
-
-## Contexte
-
-Vous êtes développeur chez FAROAD. Vous devez traiter un ticket pour la mise en place d'une route API permettant de créer un point de charge.
+# FAROAD - Exercice Technique Backend
 
 ## Objectif
 
-L'objectif est de mettre en place un appel API pour créer un point de charge. Cet appel API doit permettre de :
+Connecter un point de charge et stocker les statuts de fonctionnement.
 
-* Renseigner le nom du point de charge
-* Sélectionner le type d'emplacement du point de charge (bureaux ou domicile)
-* Generer l'identifiant unique automatiqument du point de charge (doit etre composer de 5 charateres aphanumeric sans utiliser 0 et O)
+### Partie 1 : Le Code
 
-## Spécifications techniques
-* Langage de programmation: Node.js/TypeScript
-* Framework: Express.js
-* Base de données: PostgreSQL
+**Mission :**
+Conçois et implémente un serveur d'ingestion de données.
+
+1. Le serveur doit exposer un point d'entrée **WebSocket** (WSS).
+2. Il doit recevoir et comprendre des requêtes **StatusNotification** du protocole **OCPP 1.6**.
+3. Le serveur doit stocker les messages reçus pour en conserver une trace et un historique.
+
+**Pour tester :**
+Il existe plusieurs simulateurs OCPP open-source. Tu es totalement libre de chercher et d'utiliser celui de ton choix pour envoyer les payloads vers ton serveur et valider son fonctionnement.
+
+**Contraintes techniques :**
+* Stack imposée : **Node.js et TypeScript**.
+* Pour tout le reste, **tu as carte blanche**.
+
+---
+
+### Partie 2 : System Design
+
+Demain, FAROAD déploie **100 000 bornes connectées simultanément**.
+
+Dans ton `README.md`, explique-nous :
+Comment ferais-tu évoluer l'architecture pour tenir cette charge de messages WebSocket de manière fiable ?
+
+---
+
+## Livrables
+
+Un lien vers ton dépôt Git (public ou privé partagé avec nous).
+
+Nous organiserons un échange technique avec notre CTO à la réception de ton code.
